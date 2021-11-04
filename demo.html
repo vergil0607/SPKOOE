@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mein Eigenheim</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<style>
+    .fa-chevron-down { transform: scale(12,2); color:rgb(43, 43, 56);}
+    .myicon { transform: scale(2,2); color: #181E41;}
+    .myicon-light { transform: scale(2,2); color: #8DBBCB;}
+    .text-swiper { color:#181E41;}
+    .text-swiper-light { color:#8DBBCB;}
+    .text-spk {color: #181E41;}
+    .bg-spk {background-color: #8DBBCB;}
+    .bg-spk-dark {background-color: #181E41;}
+    .carousel-control-prev-icon {color: #181E41}
+
+</style>
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-spk">
+    <div class="container-fluid">
+        <img alt="Sparkasse Oberösterreich" class="img-fluid pl-3 ml-3" src="https://cdn0.erstegroup.com/content/dam/at/spk-oberoesterreich/logo-oberoesterreich.svg" height="50">
+        <!-- <a href="#" class="navbar-brand">Beispielgasse 123, 1234 Stadt am See</a> -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span><i class="fa fa-bars myicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Services</a>
+                <a href="#" class="nav-item nav-link">About</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a href="#" class="nav-item nav-link">Register</a>
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="p-3 my-4 bg-light rounded-3">
+        <h2 class="text-center">Liebe Fr. Dr. Häuslbau</h2>
+        <h1 class="text-center">Gratulation!</h1>
+        <p class="text-center">Ihr Objekt ist</p>
+        <h2 class="text-center text-success">1.540.000 EUR</h2>
+        <p class="text-center">wert</p>
+        <h2 class="text-center text-success mb-6">+53% seit Erwerb!</h2>
+        <hr>
+        <h3 class="text-center mt-5 pt-4">Was beschäftigt Sie?</h3>
+        <!--<p class="text-center"><i class="fa fa-chevron-down fa-10x"></i></p> -->
+
+    </div>
+</div>
+
+<!-- Swiper with attirbutes 
+
+<div class="container">
+    <div class="p-3 my-3 bg-in-color rounded-3 row">
+        <div class="col-1 border-right border-white">
+            <p class="text-center"><i class="fa fa-angle-double-left myicon"></i></p>
+        </div>
+        <div class="col-10">
+            <p class="text-center"><i class="fa fa-home myicon"></i></p>
+            <p class="text-center text-swiper">Eigenheim fertigstellen</p>
+        </div>   
+        <div class="col-1 border-left border-white">
+            <p class="text-center"><i class="fa fa-angle-double-right myicon"></i></p>
+        </div> 
+    </div>    
+</div>
+-->
+
+
+<div id="carouselExampleIndicators" class="carousel slide bg-spk" data-ride="carousel" style="height: 140px;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner pt-4">
+      <div class="carousel-item active">
+        <p class="text-center"><i class="fa fa-home myicon"></i></p>
+        <p class="text-center text-swiper">Eigenheim fertigstellen</p>
+      </div>
+      <div class="carousel-item">
+        <p class="text-center"><i class="fa fa-balance-scale myicon"></i></p>
+        <p class="text-center text-swiper">Rechtliches</p>
+      </div>
+      <div class="carousel-item">
+        <p class="text-center"><i class="fa fa-anchor myicon"></i></p>
+        <p class="text-center text-swiper">Sichern & Versichern</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev"  href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span><i class="fa fa-angle-left myicon" aria-hidden="true"></i></span>
+      <span class="sr-only text-swiper">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span><i class="fa fa-angle-right myicon" aria-hidden="true"></i></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+<div class="container">
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; 2021 Network Effects</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-dark">Terms of Use</a>
+                <span class="text-muted mx-2">|</span>
+                <a href="#" class="text-dark">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
